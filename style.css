@@ -1,0 +1,52 @@
+body{
+background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+#game-area {
+    overflow: hidden;
+    position: relative;
+}
+
+.balloon {
+    position: absolute;
+    bottom: -100px;
+    background-color: red;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.balloon:hover {
+    transform: scale(1.2);
+}
+
+@keyframes moveUp {
+    from {
+        bottom: -100px;
+    }
+    to {
+        bottom: 500px;
+    }
+}
+
+.timer-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.timer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #8a1c34;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+#timer {
+    font-size: 40px;
+    color: #fff;
+}
